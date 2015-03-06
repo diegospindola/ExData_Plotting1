@@ -21,6 +21,7 @@ par(mfrow=c(1,1))
 ##################### Making Plot
 
 png("plot3.png",width=480,height=480)
+par(bg = NA)
 plot(data$DateTime, data$Sub_metering_1, type="n", ylab="Energy sub metering", xlab="")
 lines(data$DateTime, data$Sub_metering_1)
 lines(data$DateTime, data$Sub_metering_2, col="red")

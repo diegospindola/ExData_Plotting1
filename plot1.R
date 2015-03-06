@@ -17,9 +17,11 @@ data <- select(data, c(10, 3:9))
 par(mfrow=c(1,1))
 
 
+
 ##################### Making Plot
 
 png("plot1.png",width=480,height=480)
+par(bg = NA)
 hist(data$Global_active_power, xlab="Global Active Power (kilowatts)", col = "red", main = "Global Active Power")
 
 

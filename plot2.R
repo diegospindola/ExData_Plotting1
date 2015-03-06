@@ -21,6 +21,7 @@ par(mfrow=c(1,1))
 ##################### Making Plot
 
 png("plot2.png",width=480,height=480)
+par(bg = NA)
 plot(data$DateTime, data$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 
 

@@ -15,12 +15,12 @@ data <- select(data, c(10, 3:9))
 
 ##################### Setting environment up
 Sys.setlocale("LC_TIME","English")
-par(mfrow=c(2,2))
 
 
 ##################### Making Plots
 
 png("plot4.png",width=480,height=480)
+par(mfrow=c(2,2), bg = NA)
 #topleft
 plot(data$DateTime, data$Global_active_power, type="l", ylab="Global Active Power", xlab="")
 #topright
