@@ -1,8 +1,9 @@
 ##################### Reading data
 
-#reading header
+#reading header only
 header <- read.csv("household_power_consumption.txt",sep=";", nrows=1, header=FALSE)
-#reading data
+#reading data only from the dates 2007-02-01 and 
+#2007-02-02 (starting from line 66638 up to 69517 = 2880 lines)
 data <- read.csv("household_power_consumption.txt",sep=";",header=FALSE, skip=66637,nrows=2880)
 #putting labels and data together
 colnames( data ) <- unlist(header) #tip taken from this stackoverflow.com answer: http://stackoverflow.com/a/23544256/334681
